@@ -42,7 +42,7 @@ public class WeatherController {
         Logger.getRootLogger().addAppender(new ConsoleAppender(layout));
 
         getData.setOnAction(event -> {
-            String appId = "YOUR API KEY"; // <-- Insert your API key here
+            String appId = "0f9fa8e7381fe4c845229f3a70dff6e4";
             String inputCity = city.getText().trim();
             String output = getUrlContent(String.format(
                     "https://api.openweathermap.org/data/2.5/weather?q=%s&appid=%s&units=metric",
